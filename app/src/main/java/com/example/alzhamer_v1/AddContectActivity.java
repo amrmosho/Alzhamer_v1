@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.alzhamer_v1.libs.CacheManager;
+import com.example.alzhamer_v1.libs.Map;
 import com.example.alzhamer_v1.libs.options;
 
 import java.io.File;
@@ -60,11 +61,7 @@ public class AddContectActivity extends AppCompatActivity {
 
 
 
-       if (options.location.containsKey("lat")&&options.location.containsKey("lng")) {
 
-           ac_Loction.setText(options.location.get("lat")+","+options.location.get("lng"));
-
-       }
 
 
 
@@ -211,14 +208,16 @@ String id ="";
 
     public void getLoction(View view) {
 
-        Intent i=     new Intent(this , GetLoctionActivity.class);
-        i.putExtra("status","create");
-        i.putExtra("from","addContact");
+
+
+        Map map = new Map(this,ac_Loction);
+
+
+        map.getLoctions_Dialog();
 
 
 
 
-        startActivity(i);
 
     }
 

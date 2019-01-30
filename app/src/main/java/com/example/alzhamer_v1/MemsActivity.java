@@ -11,6 +11,7 @@ import android.widget.ListView;
 import com.example.alzhamer_v1.libs.Alarm;
 import com.example.alzhamer_v1.libs.CacheManager;
 import com.example.alzhamer_v1.libs.res_list_adapte;
+import com.example.alzhamer_v1.libs.utils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -33,12 +34,19 @@ public class MemsActivity extends AppCompatActivity {
         home_list.setAdapter(new res_list_adapte(this, 0,data));
 
         for(HashMap<String, String> d:data){
-          String[] time=  d.get("time").split(":");
 
+
+          String[] time=  d.get("time").split(":");
+if (time.length>1){
             d.put("h",time[0]);
             d.put("m",time[1]);
 
+
             newAlram(d);
+}else{
+
+utils.sendalert(this , "warning" ," error in Time");
+}
 
         }
 

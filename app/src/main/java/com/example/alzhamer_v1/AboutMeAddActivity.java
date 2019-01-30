@@ -1,18 +1,26 @@
 package com.example.alzhamer_v1;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.alzhamer_v1.libs.CacheManager;
+import com.example.alzhamer_v1.libs.Map;
 import com.example.alzhamer_v1.libs.options;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.MapsInitializer;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -21,7 +29,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.UUID;
 
-public class AboutMeAddActivity extends AppCompatActivity {
+public class AboutMeAddActivity extends AppCompatActivity implements View.OnClickListener {
 
     EditText txt_name, txt_phone, txt_live_it, txt_born_date, txt_blood_group, txt_age,txt_location;
     ImageView btnimage;
@@ -83,7 +91,7 @@ public class AboutMeAddActivity extends AppCompatActivity {
                 txt_blood_group.setText(data.get("blood_group"));
                 txt_age.setText(data.get("age"));
 
-                if (options.location.containsKey("lat")&&options.location.containsKey("lng")) {
+             /*   if (options.location.containsKey("lat")&&options.location.containsKey("lng")) {
 
                     txt_location.setText(options.location.get("lat")+","+options.location.get("lng"));
 
@@ -92,7 +100,9 @@ public class AboutMeAddActivity extends AppCompatActivity {
                     txt_location.setText(data.get("location"));
 
 
-                }
+                }*/
+
+
 
 
 
@@ -206,14 +216,48 @@ public class AboutMeAddActivity extends AppCompatActivity {
 
     public void getLoction(View view) {
 
+/*
+        Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.item_map);
+        dialog.show();
+        GoogleMap googleMap;
+
+
+        MapView mMapView = (MapView) dialog.findViewById(R.id.mapView);
+        MapsInitializer.initialize(this);
+
+        mMapView = (MapView) dialog.findViewById(R.id.mapView);
+        mMapView.onCreate(dialog.onSaveInstanceState());
+        mMapView.onResume();// needed to get the map to display immediately
+     //   googleMap = mMapView.getMap();
+
         Intent i=     new Intent(this , GetLoctionActivity.class);
         i.putExtra("status","create");
-        i.putExtra("from","aboutme");
+        i.putExtra("from","aboutme");*/
 
 
 
 
-        startActivity(i);
+Map map = new Map(this,txt_location);
+
+
+        map.getLoctions_Dialog();
+
+
+
+
+
+      //  startActivity(i);
 
     }
+
+    @Override
+    public void onClick(View v) {
+
+        Log.d("xxxxxxxx","gdfgdfg");
+
+    }
+
+
 }

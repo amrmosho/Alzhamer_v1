@@ -1,9 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.alzhamer_v1">
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.SEND_SMS" />
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -11,114 +8,20 @@
          location permissions for the 'MyLocation' functionality.
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
 
-
-
-
-
-
-        <activity
-            android:name=".HomeActivity"
-            android:icon="@drawable/ic_home_black_24dp"
-
-            android:label="Home" >
-
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-
-        <activity android:name=".ContactActivity"
-
-            android:icon="@drawable/ic_home_black_24dp"
-
-            android:label="Contact"
-
-
-            />
-        <activity android:name=".AboutUSActivity"
-            android:icon="@drawable/ic_home_black_24dp"
-
-            android:label="About US"
-
-            />
-        <activity android:name=".WhereamiActivity"
-
-            android:icon="@drawable/ic_home_black_24dp"
-
-            android:label="Where am i"
-            >
-
-        </activity>
-        <activity android:name=".SosActivity"
-
-            android:icon="@drawable/ic_home_black_24dp"
-
-            android:label="SOS"
-
-            />
-        <activity android:name=".AboutmeActivity"
-
-            android:icon="@drawable/ic_home_black_24dp"
-
-            android:label="About ME"
-
-            />
-        <activity android:name=".MemsActivity"
-
-            android:icon="@drawable/ic_home_black_24dp"
-
-            android:label="Memories"
-
-            />
-        <activity android:name=".AboutMeAddActivity"
-
-            android:icon="@drawable/ic_add_box_black_24dp"
-
-            android:label="Add Memory"
-
-            />
-        <activity
-            android:name=".MemsAddActivity"
-            android:icon="@drawable/ic_add_box_black_24dp"
-            android:label="Add Momrey"
-
-
-
-            />
-        <activity android:name=".AddContectActivity"
-            android:icon="@drawable/ic_add_box_black_24dp"
-
-            android:label="Add Contect"
-
-
-            >
-
-        </activity>
-        <activity android:name=".HereActivity"
-            android:icon="@drawable/ic_add_box_black_24dp"
-
-            android:label="What i am doing "
-
-
-            ></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -132,30 +35,77 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapsActivity"
+            android:name=".MapsActivity2"
+            android:label="@string/title_activity_maps2"></activity>
+        <activity
+            android:name=".HomeActivity"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:label="Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".ContactActivity"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:label="Contact" />
+        <activity
+            android:name=".AboutUSActivity"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:label="About US" />
+        <activity
+            android:name=".WhereamiActivity"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:label="Where am i"></activity>
+        <activity
+            android:name=".SosActivity"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:label="SOS" />
+        <activity
+            android:name=".AboutmeActivity"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:label="About ME" />
+        <activity
+            android:name=".MemsActivity"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:label="Memories" />
+        <activity
+            android:name=".AboutMeAddActivity"
             android:icon="@drawable/ic_add_box_black_24dp"
+            android:label="Add Your Data" />
+        <activity
+            android:name=".MemsAddActivity"
+            android:icon="@drawable/ic_add_box_black_24dp"
+            android:label="Add Momrey" />
+        <activity
+            android:name=".AddContectActivity"
+            android:icon="@drawable/ic_add_box_black_24dp"
+            android:label="Add Contect"></activity>
+        <activity
+            android:name=".HereActivity"
+            android:icon="@drawable/ic_add_box_black_24dp"
+            android:label="What i am doing " />
+        <activity
+            android:name=".MapsActivity"
+            android:icon="@drawable/ic_add_box_black_24dp"
+            android:label="MAP "></activity>
+        <activity android:name=".GetLoctionActivity"></activity>
 
-            android:label="MAP "
-
-            >
-
-
-
-
-        </activity>
-        <activity android:name=".GetLoctionActivity">
-
-
-        </activity>
-
-        <receiver android:name=".libs.Alarm"
+        <receiver
+            android:name=".libs.Alarm"
             android:enabled="true"
-            android:exported="true"></receiver>
+            android:exported="true" />
+
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
     </application>
 
 </manifest>
-

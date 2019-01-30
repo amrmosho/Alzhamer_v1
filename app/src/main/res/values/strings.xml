@@ -99,4 +99,5 @@
     <string name="Cancel">Cancel</string>
     <string name="open_location_settings">open_location_settings</string>
     <string name="gps_network_not_enabled">gps_network_not_enabled</string>
+    <string name="title_activity_maps2">Map</string>
 </resources>
