@@ -1,0 +1,102 @@
+<resources>
+
+
+    <string-array name="time">
+
+        <item>00:00</item>
+        <item>00:30</item>
+        <item>01:00</item>
+        <item>01:30</item>
+        <item>02:00</item>
+        <item>02:30</item>
+        <item>03:00</item>
+        <item>03:30</item>
+        <item>04:00</item>
+        <item>04:30</item>
+        <item>05:00</item>
+        <item>05:30</item>
+        <item>06:00</item>
+        <item>06:30</item>
+        <item>07:00</item>
+        <item>07:30</item>
+        <item>08:00</item>
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>09:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+        <item>20:30</item>
+        <item>21:00</item>
+        <item>21:30</item>
+        <item>22:00</item>
+        <item>22:30</item>
+        <item>23:00</item>
+        <item>23:30</item>
+        <item>24:00</item>
+        <item>24:30</item>
+
+
+    </string-array>
+
+    <string name="app_name">alzhamer_app</string>
+
+
+    <string name="title_activity_add_reminder">أضافة تذكير</string>
+    <string name="sun">Sunday</string>
+    <string name="mon">Monday</string>
+    <string name="tus">Tuesday</string>
+    <string name="wen">Wednesday</string>
+    <string name="thru">thursday</string>
+    <string name="fri">Friday</string>
+    <string name="str">saturday</string>
+    <string name="name">name</string>
+    <string name="dosage">الجرعة</string>
+    <string name="times">Times</string>
+    <string name="nots">Nots</string>
+    <string name="days">Week </string>
+    <string name="image">صورة</string>
+    <string name="all">All</string>
+    <string name="title_activity_reminder_info">بيانات تذكير</string>
+    <string name="accounts">الحسابات</string>
+    <string name="defult">الحساب الافتراضى</string>
+    <string name="next">التالى</string>
+    <string name="pre">السابق</string>
+    <string name="Gender">الجنس</string>
+    <string name="BrithDay">سنة الميلاد</string>
+    <string name="nottitle">ميعاد تناول دواء</string>
+    <string name="notbody">نذكرك بانه  يجب عليك تناول  الدواء  الان إسم الدواء</string>
+    <string name="type">المرض</string>
+    <string name="account">حساب</string>
+    <string name="savemsg">تم حفظ الحساب بنجاح</string>
+    <string name="savemmsg">تم حفظ التذكير بنجاح</string>
+    <string name="deleteusersmsg">تم حذف الحساب بنجاح</string>
+    <string name="updateeusersmsg">تم تحديث الحساب</string>
+    <string name="notbtn">تم</string>
+    <string name="phone">التليفون</string>
+    <string name="am_name">Title </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="select">Select</string>
+    <string name="cancel">Cancel</string>
+    <string name="Cancel">Cancel</string>
+    <string name="open_location_settings">open_location_settings</string>
+    <string name="gps_network_not_enabled">gps_network_not_enabled</string>
+</resources>
